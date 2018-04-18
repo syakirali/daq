@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+
+    android:id="@+id/dashboard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout style="@style/dashboard_space_vertical" />
+
+    <LinearLayout style="@style/dashboard_content_vertical" >
+
+        <FrameLayout style="@style/dashboard_space_horizontal" >
+        </FrameLayout>
+
+        <LinearLayout style="@style/dashboard_content_horizontal" >
+
+            <ImageView
+                style="@style/dashboard_imageview"
+                android:src="@android:drawable/sym_call_missed" />
+
+            <TextView
+                style="@style/dashboard_textview"
+                android:text="Text 1" />
+        </LinearLayout>
+
+        <FrameLayout style="@style/dashboard_space_horizontal" />
+
+        <LinearLayout style="@style/dashboard_content_horizontal" >
+
+            <ImageView
+                style="@style/dashboard_imageview"
+                android:src="@android:drawable/sym_call_missed" />
+
+            <TextView
+                style="@style/dashboard_textview"
+                android:text="Text 2" />
+        </LinearLayout>
+
+        <FrameLayout style="@style/dashboard_space_horizontal" />
+    </LinearLayout>
+
+    <FrameLayout style="@style/dashboard_space_vertical" />
+
+    <LinearLayout style="@style/dashboard_content_vertical" >
+
+        <FrameLayout style="@style/dashboard_space_horizontal" />
+
+        <LinearLayout style="@style/dashboard_content_horizontal" >
+
+            <ImageView
+                style="@style/dashboard_imageview"
+                android:src="@android:drawable/sym_call_missed" />
+
+            <TextView
+                style="@style/dashboard_textview"
+                android:text="Text 3" />
+        </LinearLayout>
+
+        <FrameLayout style="@style/dashboard_space_horizontal" />
+
+        <LinearLayout style="@style/dashboard_content_horizontal" >
+
+            <ImageView
+                style="@style/dashboard_imageview"
+                android:src="@android:drawable/sym_call_missed" />
+
+            <TextView
+                style="@style/dashboard_textview"
+                android:text="Text 4" />
+        </LinearLayout>
+
+        <FrameLayout style="@style/dashboard_space_horizontal" />
+    </LinearLayout>
+
+    <FrameLayout style="@style/dashboard_space_vertical" />
+
+</LinearLayout>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+
+<!--</android.support.constraint.ConstraintLayout>-->
