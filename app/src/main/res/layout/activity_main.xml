@@ -10,6 +10,28 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <LinearLayout style="@style/dashboard_space_vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/dashboard_content_vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout style="@style/dashboard_content_horizontal">
+
+            <ImageView
+                style="@style/dashboard_imageview"
+                android:src="@android:drawable/sym_call_missed" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/dashboard_content_horizontal" >
+            <TextView
+                style="@style/dashboard_textview"
+                android:text="Kitab" />
+        </LinearLayout>
+    </LinearLayout>
+
     <FrameLayout style="@style/dashboard_space_vertical" />
 
     <LinearLayout style="@style/dashboard_content_vertical" >
@@ -17,7 +39,8 @@
         <FrameLayout style="@style/dashboard_space_horizontal" >
         </FrameLayout>
 
-        <LinearLayout style="@style/dashboard_content_horizontal" >
+        <LinearLayout android:id="@+id/tombol_baca_quran"
+            style="@style/dashboard_content_horizontal">
 
             <ImageView
                 style="@style/dashboard_imageview"
@@ -25,12 +48,13 @@
 
             <TextView
                 style="@style/dashboard_textview"
-                android:text="Text 1" />
+                android:text="Baca Quran" />
         </LinearLayout>
 
         <FrameLayout style="@style/dashboard_space_horizontal" />
 
-        <LinearLayout style="@style/dashboard_content_horizontal" >
+        <LinearLayout android:id="@+id/tombol_kitab"
+            style="@style/dashboard_content_horizontal" >
 
             <ImageView
                 style="@style/dashboard_imageview"
@@ -38,7 +62,7 @@
 
             <TextView
                 style="@style/dashboard_textview"
-                android:text="Text 2" />
+                android:text="Kitab" />
         </LinearLayout>
 
         <FrameLayout style="@style/dashboard_space_horizontal" />
@@ -50,7 +74,8 @@
 
         <FrameLayout style="@style/dashboard_space_horizontal" />
 
-        <LinearLayout style="@style/dashboard_content_horizontal" >
+        <LinearLayout android:id="@+id/tombol_jadwal_shalat"
+            style="@style/dashboard_content_horizontal" >
 
             <ImageView
                 style="@style/dashboard_imageview"
@@ -58,12 +83,13 @@
 
             <TextView
                 style="@style/dashboard_textview"
-                android:text="Text 3" />
+                android:text="Jadwal Shalat" />
         </LinearLayout>
 
         <FrameLayout style="@style/dashboard_space_horizontal" />
 
-        <LinearLayout style="@style/dashboard_content_horizontal" >
+        <LinearLayout android:id="@+id/tombol_doa"
+            style="@style/dashboard_content_horizontal" >
 
             <ImageView
                 style="@style/dashboard_imageview"
@@ -71,7 +97,7 @@
 
             <TextView
                 style="@style/dashboard_textview"
-                android:text="Text 4" />
+                android:text="Do'a Harian" />
         </LinearLayout>
 
         <FrameLayout style="@style/dashboard_space_horizontal" />
