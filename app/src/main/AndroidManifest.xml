@@ -16,14 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuranActivity">
+        <activity android:name=".Quran.QuranActivity">
             android:label="Quran"
             android:theme="@style/MyMaterialTheme">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
         </activity>
+        <activity android:name=".jadwal_shalat.JadwalShalatActivity" />
     </application>
 
 </manifest>

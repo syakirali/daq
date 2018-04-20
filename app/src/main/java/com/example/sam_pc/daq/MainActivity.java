@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.sam_pc.daq.Quran.QuranActivity;
+import com.example.sam_pc.daq.jadwal_shalat.JadwalShalatActivity;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     LinearLayout bacaQuran;
     LinearLayout kitab;
-    LinearLayout jadwalshalat;
+    LinearLayout jadwalShalat;
     LinearLayout doa;
 
     @Override
@@ -21,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         bacaQuran = findViewById(R.id.tombol_baca_quran);
         kitab = findViewById(R.id.tombol_kitab);
-        jadwalshalat = findViewById(R.id.tombol_jadwal_shalat);
+        jadwalShalat = findViewById(R.id.tombol_jadwal_shalat);
         doa = findViewById(R.id.tombol_doa);
 
         bacaQuran.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, QuranActivity.class));
             }
         });
+
+        jadwalShalat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, JadwalShalatActivity.class));
+            }
+        });
+
     }
 
 

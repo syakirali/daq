@@ -1,4 +1,4 @@
-package com.example.sam_pc.daq;
+package com.example.sam_pc.daq.Quran;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,10 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class OneFragment extends Fragment {
+import com.example.sam_pc.daq.R;
 
-    public OneFragment(){
+public class TwoFragment extends Fragment {
 
+    public TwoFragment() {
     }
 
     @Override
